@@ -1,1 +1,85 @@
-<h1>Welcome to the home page</h1>
+{% comment %} <h1>Welcome to the home page</h1> {% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #007bff;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .jumbotron {
+            background-image: url('https://source.unsplash.com/800x400/?nature');
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            padding: 100px 0;
+            margin-bottom: 0;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+    <div class="overlay">
+        <h1>Welcome to the Home Page</h1>
+        <p>This is a place where you can explore and learn.</p>
+        <a href="#features" class="btn btn-primary">Explore Now</a>
+    </div>
+</div>
+
+<div id="features" class="container">
+    <h2>Key Features</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Feature 1</h3>
+            <p>Description of feature 1.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Feature 2</h3>
+            <p>Description of feature 2.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Feature 3</h3>
+            <p>Description of feature 3.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
